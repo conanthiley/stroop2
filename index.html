@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Stroop Test</title>
+  </head>
+  <body>
+    <center>
+      <h1>Stroop Test</h1>
+      <p id="experiment-type">Experiment Type:</p>
+      <!-- <button id="start-btn">Start</button> -->
+      <canvas id="canvas" onclick="startExperiment()"></canvas>
+      <div class="btn">
+        <button id="btn-blue" onclick="btnClicked()">blue</button>
+        <button id="btn-red" onclick="btnClicked()">red</button>
+        <button id="btn-green" onclick="btnClicked()">green</button>
+        <button id="btn-yello" onclick="btnClicked()">Yellow</button>
+        <button id="start-btn" onclick="start()">Start</button>
+      </div>
+    </center>
+    <script src="app.js"></script>
+    <style>
+      html,
+      body {
+        width: 95vw;
+        height: 95vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      canvas {
+        border: 1px solid black;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      button {
+        /* margin: 10px; */
+        border-radius: 10;
+        width: 50%;
+        height: 50px;
+      }
+    </style>
+  </body>
+</html>
